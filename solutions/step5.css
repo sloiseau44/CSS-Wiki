@@ -1,0 +1,23 @@
+.header-profile {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    position: relative;
+}
+
+.avatar::after {
+    content: "3";
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #026AD1;
+    color: white;
+}

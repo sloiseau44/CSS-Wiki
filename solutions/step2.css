@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+}
+
+.header-logo {
+    flex: auto;
+}
+
+.header-profile {
+    flex: none;
+    padding: 20px 40px;
+    border-left: 1px solid #EFEFEE;
+}
+
+.header-profile img {
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 16px;
+}

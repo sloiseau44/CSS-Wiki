@@ -1,0 +1,25 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: #FBF8FB;
+}
+
+.header {
+    background: white;
+    border-bottom: 1px solid #EFEFEE;
+
+    color: #9E999C;
+}
+
+.header-logo {
+    padding: 20px 40px;
+}
+
+.header-logo img {
+    width: 50px;
+    margin-right: 16px;
+    vertical-align: middle;
+}

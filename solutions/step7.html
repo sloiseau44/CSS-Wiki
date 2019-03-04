@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Mes ressources documentaires</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="../assets/normalize.css" rel="stylesheet" />
+    <link href="step1.css" rel="stylesheet" />
+    <link href="step2.css" rel="stylesheet" />
+    <link href="step3.css" rel="stylesheet" />
+    <link href="step4.css" rel="stylesheet" />
+    <link href="step5.css" rel="stylesheet" />
+    <link href="step6.css" rel="stylesheet" />
+    <link href="step7.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,700" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="header-logo">
+        <img src="../assets/logo.svg" alt="" />
+        <div>Mes Ressources Documentaires</div>
+    </div>
+    <div class="header-profile">
+        <button type="button" class="avatar">
+            <img src="../assets/avatar.jpg" alt="" />
+        </button>
+	<div class="notifications notifications--hidden">
+		Vous avez un nouveau message
+	</div>
+        Marie Thompson
+    </div>
+</div>
+<div class="container">
+    <div class="title">
+        <h1>Ressources HTML et CSS</h1>
+        <p>Tout pour savoir faire de belles pages web.</p>
+    </div>
+    <div class="card">
+        <div class="card-icon">
+            <img src="../assets/quick-start.svg" alt="" />
+        </div>
+        <div class="card-content">
+            <div class="card-name">Commencer avec HTML & CSS</div>
+            <div class="card-description">Les outils et les tutoriels pour s'y mettre</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-icon card-icon--second">
+            <img src="../assets/responsive.svg" alt="" />
+        </div>
+        <div class="card-content">
+            <div class="card-name">Gérer le Responsive</div>
+            <div class="card-description">De la théorie aux bonnes pratiques</div>
+        </div>
+    </div>
+</div>
+<script>
+document.querySelector('.avatar').addEventListener('click', function() {
+    document.querySelector('.notifications').classList.toggle('notifications--hidden')
+});
+</script>
+</body>
+</html>

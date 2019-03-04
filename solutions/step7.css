@@ -1,0 +1,30 @@
+.header-profile {
+    position: relative;
+}
+
+.avatar {
+    border: 0;
+    background: transparent;
+    font: inherit;
+    margin-right: 16px;
+
+    cursor: pointer;
+}
+
+.avatar img {
+    margin-right: 0;
+}
+
+.notifications {
+    position: absolute;
+    background: white;
+    border: 1px solid #eee;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding: 20px;
+}
+
+.notifications--hidden {
+    display: none;
+}
