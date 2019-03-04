@@ -16,12 +16,12 @@ body{
 .header__logo, .header__utilisateur{
 	padding : 20px 40px;
 	display : flex;
+	align-items: center;
 }
 
 .imageLogo, .containerPhoto {
 	width:50px;
 	margin-right: 16px;
-    vertical-align: middle;
 }
 
 .header__utilisateur{
@@ -33,6 +33,7 @@ body{
 	.header{
 		flex-direction: column-reverse;
 		padding:20px;
+		align-items: flex-start;
 	}
 	
 	.carte{
@@ -53,8 +54,24 @@ body{
 		margin-bottom: 20px;
 	}
 
+	.header__logo, .header__utilisateur{
+		padding-left: 0;
+	}
 
 
+	.header__utilisateur{
+		border-style: none;
+	}
+	
+
+
+}
+
+@media (min-width: 600px){
+
+	.header__utilisateur{
+		border-left: solid #EFEFEE;
+	}
 }
 
 .photoProfile {
@@ -82,9 +99,6 @@ body{
 
 }
 
-.header__utilisateur{
-	border-left: solid #EFEFEE;
-}
 
 .container {
 	max-width: 800px;
