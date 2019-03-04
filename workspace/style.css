@@ -64,12 +64,17 @@ body{
 	.header__utilisateur{
 		border-style: none;
 	}
+
 }
 
 @media (min-width: 600px){
 
 	.header__utilisateur{
 		border-left: solid #EFEFEE;
+	}
+
+	.carteCercle{
+		margin-right: 20px;
 	}
 }
 
@@ -150,7 +155,6 @@ body{
 	height: 100px;
 	display:flex;
 	justify-content: center;
-	margin-right: 20px;
 }
 
 .carte--responsive .carteCercle{
@@ -173,6 +177,6 @@ body{
 .menuNotification--invisible{
 	transform: translateY(-20px);
 	opacity: 0;
-    /*z-index: -1;*/
-    pointer-events: none;
+    z-index: -1;
+    /*pointer-events: none;*/
 }
