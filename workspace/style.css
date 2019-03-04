@@ -16,14 +16,40 @@ body{
 	padding : 20px 40px;
 }
 
-.imageLogo, .photoProfile {
+.imageLogo, .containerPhoto {
 	width:50px;
 	margin-right: 16px;
     vertical-align: middle;
 }
 
+.header__utilisateur{
+	display: flex;
+	align-items: center;
+}
+
 .photoProfile {
+	width:50px;
 	border-radius: 50%;
+}
+
+.containerPhoto{
+	position: relative;
+
+}
+.containerPhoto::after {
+	content:"3";
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: #026AD1;
+	color:white;
+	right: 0;
+	bottom: -8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 }
 
 .header__utilisateur{
