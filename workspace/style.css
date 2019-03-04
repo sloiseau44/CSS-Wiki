@@ -57,6 +57,7 @@ body{
 	border-radius: 10px;
 	display:flex;
 	align-items: center;
+	margin-bottom: 20px;
 }
 
 .icôneCommencer{
@@ -82,5 +83,9 @@ body{
 	display:flex;
 	justify-content: center;
 	margin-right: 20px;
+}
+
+.carte--responsive .carteCercle{
+	background-color: #FEE0DF;	
 }
 
