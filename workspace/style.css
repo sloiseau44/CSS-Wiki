@@ -10,10 +10,12 @@ body{
 	color: #9E999C;
 	justify-content: space-between;
 	display : flex;
+	align-items: center;
 }
 
 .header__logo, .header__utilisateur{
 	padding : 20px 40px;
+	display : flex;
 }
 
 .imageLogo, .containerPhoto {
@@ -25,6 +27,34 @@ body{
 .header__utilisateur{
 	display: flex;
 	align-items: center;
+}
+
+@media (max-width: 600px){
+	.header{
+		flex-direction: column-reverse;
+		padding:20px;
+	}
+	
+	.carte{
+		flex-direction: column;
+		align-content: : center;
+		padding: 20px;
+
+	}
+
+	.texte, .titre{
+		display: flex;		
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.carteCercle{
+		margin-bottom: 20px;
+	}
+
+
+
 }
 
 .photoProfile {
@@ -60,7 +90,6 @@ body{
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 0 20px;
-	color: ;
 }
 
 .titre{
