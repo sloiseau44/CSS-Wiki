@@ -5,14 +5,24 @@ body{
 .section--header{
 	border-bottom: solid #EFEFEE;
 	color: #9E999C;
+	display : flex;
+	justify-content: space-between;
 }
 
-.logo{
+.logo, .utilisateur{
 	padding : 20px 40px;
 }
 
-.logo img{
+.logo img, .utilisateur img {
 	width:50px;
 	margin-right: 16px;
     vertical-align: middle;
+}
+
+.utilisateur img {
+	border-radius: 50%;
+}
+
+.utilisateur{
+	border-left: solid #EFEFEE;
 }
