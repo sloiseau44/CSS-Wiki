@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" type="text/css" href="../assets/normalize.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
+
 	</head>
 	<body>	
 		<div class="header">
@@ -19,7 +20,11 @@
 				<div class="containerPhoto">
 					<img src="../assets/avatar.jpg" class="photoProfile">
 				</div>
-				Marie Thompson
+				<div class="menuNotification menuNotification--invisible">
+					Vous avez 3 nouveaux messages
+				</div>	
+				Marie Thompson	
+
 			</div>
 		</div>
 		<div class="container">
@@ -55,4 +60,10 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+		document.querySelector('.header__utilisateur').addEventListener('click', function() {
+		    document.querySelector('.menuNotification').classList.toggle('menuNotification--invisible')
+		});
+
+	</script>
 </html>

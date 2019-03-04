@@ -2,6 +2,7 @@ body{
 	background-color: #FBF8FB;
 	font-family: 'Asap', sans-serif;
 	color:#292728;
+	box-sizing: border-box;
 }
 
 .header{
@@ -27,12 +28,12 @@ body{
 .header__utilisateur{
 	display: flex;
 	align-items: center;
+	position:relative;
 }
 
 @media (max-width: 600px){
 	.header{
 		flex-direction: column-reverse;
-		padding:20px;
 		align-items: flex-start;
 	}
 	
@@ -56,15 +57,13 @@ body{
 
 	.header__logo, .header__utilisateur{
 		padding-left: 0;
+		width:calc(100% - 40px);
+		padding: 20px;
 	}
-
 
 	.header__utilisateur{
 		border-style: none;
 	}
-	
-
-
 }
 
 @media (min-width: 600px){
@@ -83,6 +82,7 @@ body{
 	position: relative;
 
 }
+
 .containerPhoto::after {
 	content:"3";
 	position: absolute;
@@ -98,7 +98,6 @@ body{
 	justify-content: center;
 
 }
-
 
 .container {
 	max-width: 800px;
@@ -158,3 +157,22 @@ body{
 	background-color: #FEE0DF;	
 }
 
+.menuNotification{
+	position: absolute;
+    background: white;
+    border: solid #eee;
+    right: 1px; 
+    top: 100%;
+    padding: 20px;
+    width:calc(100% - 43px);
+    transform: translateY(0);
+    opacity: 100;
+    transition: 0.5s;
+}
+
+.menuNotification--invisible{
+	transform: translateY(-20px);
+	opacity: 0;
+    /*z-index: -1;*/
+    pointer-events: none;
+}
