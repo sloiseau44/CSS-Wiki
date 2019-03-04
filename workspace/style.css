@@ -16,13 +16,13 @@ body{
 	padding : 20px 40px;
 }
 
-.header__logo img, .header__utilisateur img {
+.imageLogo, .photoProfile {
 	width:50px;
 	margin-right: 16px;
     vertical-align: middle;
 }
 
-.header__utilisateur img {
+.photoProfile {
 	border-radius: 50%;
 }
 
@@ -50,3 +50,37 @@ body{
 	color: #B4B4B4;
 
 }
+
+.carte{
+	background-color: white;
+	padding : 20px 40px;
+	border-radius: 10px;
+	display:flex;
+	align-items: center;
+}
+
+.icôneCommencer{
+	width : 50px;
+	margin : 20px;
+	text-align: center;
+}
+
+.titreCarte{
+	font-size: 32px;
+	margin-bottom: 8px;
+}
+
+.descriptionCarte{
+	color:#B4B4B4;
+}
+
+.carteCercle{
+	background-color: #E5EFF5;
+	border-radius: 50%;
+	width:100px;
+	height: 100px;
+	display:flex;
+	justify-content: center;
+	margin-right: 20px;
+}
+
