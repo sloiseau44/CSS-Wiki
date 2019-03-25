@@ -1,0 +1,182 @@
+body{ 	
+	background-color: #FBF8FB;
+	font-family: 'Asap', sans-serif;
+	color:#292728;
+	box-sizing: border-box;
+}
+
+.header{
+	background-color: white;
+	border-bottom: solid #EFEFEE;
+	color: #9E999C;
+	justify-content: space-between;
+	display : flex;
+	align-items: center;
+}
+
+.header__logo, .header__utilisateur{
+	padding : 20px 40px;
+	display : flex;
+	align-items: center;
+}
+
+.imageLogo, .containerPhoto {
+	width:50px;
+	margin-right: 16px;
+}
+
+.header__utilisateur{
+	display: flex;
+	align-items: center;
+	position:relative;
+}
+
+@media (max-width: 600px){
+	.header{
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+	
+	.carte{
+		flex-direction: column;
+		align-content: : center;
+		padding: 20px;
+
+	}
+
+	.texte, .titre{
+		display: flex;		
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.carteCercle{
+		margin-bottom: 20px;
+	}
+
+	.header__logo, .header__utilisateur{
+		padding-left: 0;
+		width:calc(100% - 40px);
+		padding: 20px;
+	}
+
+	.header__utilisateur{
+		border-style: none;
+	}
+
+}
+
+@media (min-width: 600px){
+
+	.header__utilisateur{
+		border-left: solid #EFEFEE;
+	}
+
+	.carteCercle{
+		margin-right: 20px;
+	}
+}
+
+.photoProfile {
+	width:50px;
+	border-radius: 50%;
+}
+
+.containerPhoto{
+	position: relative;
+
+}
+
+.containerPhoto::after {
+	content:"3";
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: #026AD1;
+	color:white;
+	right: 0;
+	bottom: -8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.titre{
+	padding: 40px 0;
+}
+
+.titre h1{
+	font-weight: normal;
+}
+
+.titre .sousTitre{
+	font-size: 20px;
+	color: #B4B4B4;
+
+}
+
+.carte{
+	background-color: white;
+	padding : 20px 40px;
+	border-radius: 10px;
+	display:flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.icôneCommencer{
+	width : 50px;
+	margin : 20px;
+	text-align: center;
+}
+
+.titreCarte{
+	font-size: 32px;
+	margin-bottom: 8px;
+}
+
+.descriptionCarte{
+	color:#B4B4B4;
+}
+
+.carteCercle{
+	background-color: #E5EFF5;
+	border-radius: 50%;
+	width:100px;
+	height: 100px;
+	display:flex;
+	justify-content: center;
+}
+
+.carte--responsive .carteCercle{
+	background-color: #FEE0DF;	
+}
+
+.menuNotification{
+	position: absolute;
+    background: white;
+    border: solid #eee;
+    right: 1px; 
+    top: 100%;
+    padding: 20px;
+    width:calc(100% - 43px);
+    transform: translateY(0);
+    opacity: 100;
+    transition: 0.5s;
+}
+
+.menuNotification--invisible{
+	transform: translateY(-20px);
+	opacity: 0;
+    z-index: -1;
+    /*pointer-events: none;*/
+}

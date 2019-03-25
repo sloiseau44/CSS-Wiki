@@ -4,8 +4,66 @@
 		<meta charset="UTF-8">
 		<title>Mes Ressources Documentaires</title>
 
+		<link href="https://fonts.googleapis.com/css?family=Asap:400,700,900" rel="stylesheet">
+
 		<link rel="stylesheet" type="text/css" href="../assets/normalize.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
 
-	<body>
+	</head>
+	<body>	
+		<div class="header">
+			<div class="header__logo">
+				<img src="../assets/logo.svg" class="imageLogo">
+				Mes Ressources Documentaires
+			</div>
+			<div class="header__utilisateur" >
+				<div class="containerPhoto">
+					<img src="../assets/avatar.jpg" class="photoProfile">
+				</div>
+				<div class="menuNotification menuNotification--invisible">
+					Vous avez 3 nouveaux messages
+				</div>	
+				Marie Thompson	
+
+			</div>
+		</div>
+		<div class="container">
+			<div class="titre">
+				<h1>Ressources HTML et CSS</h1>
+				<div class="sousTitre">Tout pour savoir faire de belles pages web.</div>
+			</div>
+			<div class="carte carte--commencer">
+				<div class="carteCercle">
+					<img src="../assets/quick-start.svg" class="icôneCommencer">
+				</div>
+				<div class="texte">
+					<div class="titreCarte">	
+						Commencer avec HTML & CSS
+					</div>
+					<div class="descriptionCarte">
+						Les outils et les tutoriels pour s'y mettre
+					</div>
+				</div>
+			</div>
+			<div class="carte carte--responsive">
+				<div class="carteCercle">
+					<img src="../assets/responsive.svg" class="icôneCommencer">
+				</div>
+				<div class="texte">
+					<div class="titreCarte">	
+						Gérer la Responsive
+					</div>
+					<div class="descriptionCarte">
+						De la théorie aux bonnes pratiques
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		document.querySelector('.header__utilisateur').addEventListener('click', function() {
+		    document.querySelector('.menuNotification').classList.toggle('menuNotification--invisible')
+		});
+
+	</script>
+</html>
